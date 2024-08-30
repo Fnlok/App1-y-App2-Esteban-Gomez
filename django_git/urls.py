@@ -18,8 +18,11 @@ from django.contrib import admin
 from django.urls import path,include
 from firstApp import views
 from app2 import views
+from App3 import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('firstApp/',include("firstApp.urls")),
     path('app2/',include("app2.urls")),
+    path('app3/',include("App3.urls")),
 ]
